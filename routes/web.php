@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::post('post-rating','frontendcontroller@post_rating')->name('post.rating');
